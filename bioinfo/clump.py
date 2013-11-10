@@ -2,16 +2,18 @@ import collections
 import operator
 import itertools
 
-#l = "CGGACTCGACAGATGTGAAGAACGACAATGTGAAGACTCGACACGACAGAGTGAAGAGAAGAGGAAACATTGTAA"
+
+# http://stackoverflow.com/questions/1518522/python-most-common-element-in-a-list
+
 f = open('E-coli.txt', 'r')
 l = f.read()
 
 global total
 total = []
 
-kmers = 5
-length = 50
-t = 4
+kmers = 9
+length = 500
+t = 3
 
 # d = {}
 # for i in range(len(l)): 
